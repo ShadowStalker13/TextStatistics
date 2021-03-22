@@ -1,7 +1,7 @@
 import os
 
 def get_words(filename):
-    with open(filename, encoding = "utf-8") as file:
+    with open(filename, encoding="utf-8") as file:
         text = file.read()
     text = text.replace("\n", " ")
     text = text.replace(",", "").replace(".", "").replace("?", "").replace("!", "")
@@ -20,12 +20,13 @@ def words_into_dict(words):
     return words_dict
 
 def count_words(filename):
-    words = get_words(filename)
-    words_dict = words_into_dict(words)
-    print("Количество слов: " % len(words))
-    print("Количество уникальных слов: " % len(words_dict))
-    print("Все использованные слова:")
-    for word in words_dict:
-        print(word.ljust(20), words_dict[word])
-
-
+    if not os.path.exists(filename):
+        print("Неудалось открыть файл")
+    else:
+        words = get_words(filename)
+        words_dict = words_into_dict(words)
+        print("Количество слов: ", len(words))
+        print("Количество уникальных слов: ", len(words_dict))
+        print("Все использованные слова:")
+        for word in words_dict:
+            print(word, words_dict[word])
