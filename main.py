@@ -1,5 +1,6 @@
 import os
 
+
 def get_words(filename):
     with open(filename, encoding="utf-8") as file:
         text = file.read()
@@ -10,6 +11,7 @@ def get_words(filename):
     words.sort()
     return words
 
+
 def words_into_dict(words):
     words_dict = dict()
     for word in words:
@@ -18,6 +20,7 @@ def words_into_dict(words):
         else:
             words_dict[word] = 1
     return words_dict
+
 
 def count_words(filename):
     if not os.path.exists(filename):
