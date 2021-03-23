@@ -2,7 +2,7 @@ import os
 
 
 def get_words(filename):
-    with open(filename, encoding="utf-8") as file:
+    with open(filename, encoding="UTF-8") as file:
         text = file.read()
     text = text.replace("\n", " ")
     text = text.replace(",", "").replace(".", "").replace("?", "").replace("!", "")
