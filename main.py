@@ -23,13 +23,19 @@ def words_into_dict(words):
 
 
 def count_words(filename):
-    if not os.path.exists(filename):
-        print("Неудалось открыть файл")
-    else:
-        words = get_words(filename)
-        words_dict = words_into_dict(words)
-        print("Количество слов: ", len(words))
-        print("Количество уникальных слов: ", len(words_dict))
-        print("Все использованные слова:")
-        for word in words_dict:
-            print(word, words_dict[word])
+    words = get_words(filename)
+    count_word = len(words)
+    return count_word
+
+
+def count_unique_words(filename):
+    words = get_words(filename)
+    words_dict = words_into_dict(words)
+    count_unique = len(words_dict)
+    return count_unique
+
+
+def all_words(filename):
+    words = get_words(filename)
+    words_dict = words_into_dict(words)
+    return words_dict
