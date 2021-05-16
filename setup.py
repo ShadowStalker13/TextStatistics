@@ -9,6 +9,7 @@ setuptools.setup(
     version="0.0.1",
     author="Andrew Puchkov",
     author_email="andr1502puch@gmail.com",
+    description="Text statistics",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/ShadowStalker13/TextStatistics",
