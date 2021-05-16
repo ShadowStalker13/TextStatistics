@@ -14,8 +14,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/ShadowStalker13/TextStatistics",
     classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Natural Language :: Russian",
         "Operating System :: Microsoft :: Windows :: Windows 10",
         "Programming Language :: Python :: 3.9",
     ],
