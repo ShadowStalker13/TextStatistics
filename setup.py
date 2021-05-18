@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="TextStatistic",
-    version="1.0.1",
+    version="1.0.2",
     author="Andrew Puchkov",
     author_email="andr1502puch@gmail.com",
     description="Text statistics",
@@ -18,5 +18,5 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
     ],
     package_dir={"": "scr"},
-    packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(where="scr"),
 )
