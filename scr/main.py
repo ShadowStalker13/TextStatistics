@@ -2,7 +2,8 @@ def get_words(filename):
     with open(filename, encoding="utf-8") as file:
         text = file.read()
     text = text.replace("\n", " ")
-    text = text.replace(",", "").replace(".", "").replace("?", "").replace("!", "").replace("”", "").replace("“", "").replace(":", "")
+    text = text.replace(",", "").replace(".", "").replace("?", "").replace("!", "").replace("”", "").replace("“", "")
+    text = text.replace(":", "")
     text = text.lower()
     words = text.split()
     words.sort()
