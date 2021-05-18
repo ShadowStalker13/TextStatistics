@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="TextStatistic",
-    version="1.0.0",
+    version="1.0.1",
     author="Andrew Puchkov",
     author_email="andr1502puch@gmail.com",
     description="Text statistics",
