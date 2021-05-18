@@ -19,7 +19,7 @@
 ### Windows
 
 ```
-py -m pip install "TextStatistic"
+py -m pip install TextStatistic
 ```
 ## Функции
 
