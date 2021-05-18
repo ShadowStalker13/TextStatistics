@@ -1,8 +1,8 @@
 import unittest
-from scr.main import get_words
-from scr.main import count_words
-from scr.main import count_unique_words
-from scr.main import all_words
+from scr.TextStatistic import get_words
+from scr.TextStatistic import count_words
+from scr.TextStatistic import count_unique_words
+from scr.TextStatistic import all_words
 
 
 class TextStatisticsTests(unittest.TestCase):
